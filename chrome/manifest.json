@@ -1,0 +1,14 @@
+{
+  "name": "TiX cookies miner",
+  "description": "Collects cookies at the tixchat",
+  "version": "0.1.5",
+  "author": "XoBpawok",
+  "content_scripts": [{
+    "matches": ["*://*.tixchat.com/*"],
+    "js": ["content.js"]
+  }],
+  "browser_action": {
+    "default_title": "Cookies miner"
+  },
+  "manifest_version": 2
+}

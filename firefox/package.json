@@ -1,0 +1,13 @@
+{
+  "title": "TiX cookies miner",
+  "name": "tixcookiesminer",
+  "version": "0.0.1",
+  "description": "Simple extension that collects cookies at the tixchat.com",
+  "main": "index.js",
+  "author": "XoBpawok",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
