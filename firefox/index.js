@@ -6,5 +6,5 @@ var pageMod = require("sdk/page-mod");
 // The script replaces the page contents with a message
 pageMod.PageMod({
   include: "*.tixchat.com",
-  contentScript: "!function(){setInterval(function(){document.querySelector('.cookies .cookie')&&document.querySelector('.cookies .cookie').click()},1e4)}();"
+  contentScript: "!function(){setInterval(function(){var cookiesContainer = document.querySelector('.cookies');cookiesContainer.parentNode.className.indexOf('hidden') === -1 && cookiesContainer.querySelector('.cookie').click();},1e4)}();"
 });

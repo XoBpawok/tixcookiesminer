@@ -1,5 +1,9 @@
 (function() {
-  setInterval(function(){document.querySelector('.cookies .cookie').click();}, 10000)
+	setInterval(function(){
+		var cookiesContainer = document.querySelector('.cookies');
+		cookiesContainer.parentNode.className.indexOf('hidden') === -1
+			&& cookiesContainer.querySelector('.cookie').click();
+	}, 10000)
 })();
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
